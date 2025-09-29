@@ -6,6 +6,10 @@
         margin-right: 0;
         min-width: 335px;
     }
+
+    @include mobile {
+        width: auto;
+    }
 }
 .address__list {
     display: grid;
@@ -17,7 +21,7 @@
     column-gap: 24px;
 
     @include mobile {
-        column-gap: 16px;
+        column-gap: 10px;
     }
 
     .address__icon {
@@ -58,12 +62,18 @@
         line-height: 150%;
         color: #fff;
         transition: color 0.3s ease-in;
+
+        @include mobile {
+            font-size: 14px;
+        }
     }
 
     a:hover {
         text-decoration: underline;
         color:#4f8ff0;
     }
+
+    
 }
 
 .address__info {

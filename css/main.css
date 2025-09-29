@@ -123,7 +123,8 @@ p + p {
 }
 @media (max-width: 768px) {
   .container {
-    width: 372px;
+    width: 342px;
+    padding: 0;
   }
 }
 
@@ -1681,6 +1682,11 @@ a.buttons:hover {
     min-width: 335px;
   }
 }
+@media (max-width: 768px) {
+  .address {
+    width: auto;
+  }
+}
 
 .address__list {
   display: grid;
@@ -1700,9 +1706,9 @@ a.buttons:hover {
 }
 @media (max-width: 768px) {
   .address__item {
-    -webkit-column-gap: 16px;
-       -moz-column-gap: 16px;
-            column-gap: 16px;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
   }
 }
 .address__item .address__icon {
@@ -1743,6 +1749,12 @@ a.buttons:hover {
   color: #fff;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
+}
+@media (max-width: 768px) {
+  .address__item b,
+  .address__item a {
+    font-size: 14px;
+  }
 }
 .address__item a:hover {
   text-decoration: underline;
