@@ -1,0 +1,38 @@
+.services {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+
+.services__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.services__text-content {
+    
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: #222;
+    }
+
+    p + p {
+        margin-top: 1em;
+    }
+}
+
+
+.services__title {
+    margin-bottom: 24px;
+}
+
+.services__cards {
+}
+
+.services__button {
+}

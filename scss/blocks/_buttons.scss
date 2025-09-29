@@ -1,0 +1,65 @@
+.buttons,
+a.buttons {
+	display: inline-block;
+	border: 2px solid #4f8ff0;
+	padding: 16px 24px;
+	background-color: transparent;
+
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 120%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	
+	transition: all 0.3s ease-in;
+
+	&--primary {
+		background-color: #4f8ff0;
+	}
+
+	&--secondary {
+		background-color:  #e6e6e6;
+		color: #222;
+		border-color: #e6e6e6;
+
+		&:hover {
+			border-color: #4f8ff0;
+		}
+	}
+
+	&:hover {
+		background-color: #fff;
+		color: #4f8ff0;
+	}
+
+}
+
+
+// slider btn
+.button--control {
+	border: none;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+
+	svg {
+		fill: #4F8FF0;
+		transition: all 0.3s ease-in;
+	}
+
+	&:hover {
+		svg {
+			fill: rgba(79, 143, 240, .6);
+		}		
+	}
+}
+
+.button--control-prew {
+	transform: rotate(-180deg);
+}
+
+.button--control-next {
+
+}

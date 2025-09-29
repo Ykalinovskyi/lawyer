@@ -1,0 +1,38 @@
+.container {
+	width: 1350px;
+	padding: 0 var(--container-padding);
+	margin: 0 auto;
+
+	@include tablet {
+		width: 768px;
+	}
+
+	@include mobile {
+		width: 360px;
+	}
+}
+
+.container--full {
+	min-width: 100%;
+	padding: 0 var(--container-padding);
+}
+
+.container--left-50 {
+	max-width: 50%;
+	padding: 0 var(--container-padding);
+
+	@include mobile {
+		max-width: 100%;
+	}
+}
+
+.container--right-50 {
+	max-width: 50%;
+	padding: 0 var(--container-padding);
+	margin-right: auto;
+
+	@include mobile {
+		max-width: 100%;
+	}
+}
+

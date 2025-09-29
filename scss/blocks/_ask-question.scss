@@ -1,0 +1,40 @@
+.ask-question {
+
+    p {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #fff;
+    }
+}
+
+.ask-question__row {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.ask-question__about {
+    
+    b {
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #fff;
+        margin-bottom: 4px;
+    }
+
+    span {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 120%;
+        color: #fff;
+    }
+}
+
+.ask-question__btn {
+}

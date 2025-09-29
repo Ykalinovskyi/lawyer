@@ -1,0 +1,30 @@
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 2;
+}
+
+.main-header__row {
+    &--upper {
+        background-color: #010101;
+        padding: 17px 0;
+    }
+
+    &--bottom {
+        background-color:  rgba(1, 1, 1, 0.76);
+        padding: 22px 0;
+    }
+
+    & > .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.main-header__btn {
+    display: none;
+}

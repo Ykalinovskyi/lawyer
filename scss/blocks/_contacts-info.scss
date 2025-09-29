@@ -1,0 +1,47 @@
+.contacts-info {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.contancts-info__link {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    transition: color 0.3s ease-in;
+
+    svg {
+        transition: fill 0.3s ease-in;
+        fill: #4F8FF0;
+    }
+
+    &:hover {
+        color: #4f8ff0;
+
+        svg {
+            fill: #fff;
+        }
+    }
+
+}
+
+.contacts-info__btn {
+    font-family: inherit;
+    font-weight: 700;   
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4f8ff0;
+
+    transition: color 0.3s ease-in;
+    
+    &:hover {
+        color: #fff;
+    }
+}

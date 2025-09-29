@@ -1,0 +1,16 @@
+.copyright {
+    padding: 16px 0;
+}
+
+.copyright__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    p {
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}

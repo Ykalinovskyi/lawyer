@@ -1,0 +1,12 @@
+{
+    "folder-color.pathColors": [
+        {
+            "folderPath": "lawayer\\img\\",
+            "color": "foldercolorizer.color_0000cc"
+        },
+        {
+            "folderPath": "lawayer\\js\\",
+            "color": "foldercolorizer.color_3300ff"
+        }
+    ]
+}

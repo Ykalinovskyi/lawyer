@@ -1,0 +1,60 @@
+.f-card {
+    display: grid;
+    gap: 16px;
+
+    background-color: #ffffff;
+
+    padding: 32px;
+    box-shadow: 2px 2px 10px 0 rgba(33, 33, 33, 0.15);
+}
+
+.f-card__about {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 55px;
+        height: 56px;
+        position: absolute;
+        right: 32px;
+        bottom: calc(56px / 2 - 12px);
+
+        background-image: url('./../img/feedback/decor/game-icons_feather.svg');
+        background-position: center;
+    }
+}
+
+.f-card__avatar {
+    border-radius: 50%;
+}
+
+.f-card__user {
+    display: flex;
+    flex-direction: column;
+    row-gap:4px;
+
+    span {
+        font-weight: 300;       
+        font-size: 14px;
+        line-height: 1.2;
+        color: #222;
+    }
+
+    b {
+        font-weight: 700;   
+        font-size: 20px;
+        line-height: 150%;
+        color: #222;
+    }
+}
+
+.f-card__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #222;
+}

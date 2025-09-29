@@ -1,0 +1,39 @@
+.materials {
+    padding: 80px 0;
+}
+
+.materials__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 48px;
+}
+
+.materials__text-content {
+    max-width: 920px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #222;
+}
+
+.materials__title {
+    margin-bottom: 24px;
+}
+
+.materials__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:24px;
+}
+
+.materials__btns {
+}
+
+.materials__btn {
+}
+
+.button {
+}
