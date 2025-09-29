@@ -13,4 +13,8 @@
         font-size: 14px;
         line-height: 1.2;
     }
+
+    @include mobile {
+        flex-direction: column;
+    }
 }

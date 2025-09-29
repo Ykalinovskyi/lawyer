@@ -1,5 +1,13 @@
 .materials {
     padding: 80px 0;
+
+    @include tablet {
+        padding: 60px 0;
+    }
+
+    @include mobile {
+        padding: 40px 0;
+    }
 }
 
 .materials__row {
@@ -7,6 +15,11 @@
     flex-direction: column;
     align-items: center;
     row-gap: 48px;
+
+    @include tablet {
+        overflow: hidden;
+        row-gap: 39px;
+    }
 }
 
 .materials__text-content {
@@ -27,6 +40,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:24px;
+
+    @include tablet {
+        display: flex;
+        align-self: flex-start;
+        column-gap: 24px;
+    }
 }
 
 .materials__btns {

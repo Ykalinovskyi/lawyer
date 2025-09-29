@@ -17,6 +17,12 @@
     column-gap: 24px;
 }
 
+.ask-question__img {
+    @include tablet {
+        border-radius: 50%;
+    }
+}
+
 .ask-question__about {
     
     b {

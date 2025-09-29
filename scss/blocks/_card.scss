@@ -3,6 +3,19 @@
     grid-template-columns: repeat(3, 424px);
     row-gap: 38px;
     column-gap: 24px;
+
+    @include laptop {
+        grid-template-columns: repeat(3, 368px);
+    }
+
+    @include tablet {
+        grid-template-columns: 336px 336px;
+        gap: 24px;
+    }
+
+    @include mobile {
+        display: flex;
+    }
 }
 
 .card__item {
@@ -12,6 +25,16 @@
 
     padding: 50px 32px;
     background-color: #fff;
+
+    @include tablet {
+        padding: 30px 32px 40px;
+    }
+
+    @include mobile {
+        width: 250px;
+
+        padding: 32px 16px 24px 16px;
+    }
 
      color: #222;
 
@@ -34,6 +57,14 @@
 
         opacity: 0;
         transition: opacity 0.5s ease-in;
+
+        @include laptop {
+            background-size: 375px 200px;
+        }
+
+        @include tablet {
+            background-image: none;
+        }
     }
 
     svg {

@@ -1,6 +1,10 @@
 .services {
     padding: 80px 0;
     background-color: #f7f7f7;
+
+    @include tablet {
+        padding: 60px 0;
+    }
 }
 
 .services__row {
@@ -9,6 +13,13 @@
     row-gap: 48px;
     align-items: flex-start;
     align-items: center;
+
+    @include mobile {
+        overflow-x: hidden;
+        align-items: flex-start;
+        row-gap: 24px;
+    }
+
 }
 
 .services__text-content {
@@ -19,6 +30,10 @@
         line-height: 120%;
         text-align: center;
         color: #222;
+
+        @include mobile {
+            font-size: 14px;
+        }
     }
 
     p + p {
@@ -29,10 +44,14 @@
 
 .services__title {
     margin-bottom: 24px;
+    @include mobile {
+        margin-bottom: 16px;
+    }
 }
 
 .services__cards {
 }
 
 .services__button {
+    align-self: center;
 }

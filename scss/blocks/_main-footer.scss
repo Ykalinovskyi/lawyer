@@ -2,6 +2,14 @@
     margin-top: auto;
     background-color: #222;
     padding: 80px 0 0;
+
+    @include tablet {
+        padding: 60px 0 0;
+    }
+
+    @include mobile {
+        padding: 40px 0 0;
+    }
 }
 
 .main-footer__row {
@@ -9,6 +17,14 @@
     flex-direction: column;
     row-gap: 48px;
     padding-bottom: 80px;
+
+    @include tablet {
+        padding-bottom: 60px;
+    }
+
+    @include mobile {
+        padding-bottom: 40px;
+    }
 }
 
 .main-footer__about {
@@ -26,12 +42,40 @@
         line-height: 1.2;
         text-transform: lowercase;
         color: #f8f5f4;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    @include mobile {
+        text-align: center;
+        align-self: center;
+        padding-bottom: 24px;
+
+        .main-footer__logo {
+            b {
+                font-size: 28px;
+            }
+            font-size: 20px;
+        }
     }
 }
 
 .main-footer__cols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 26px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        row-gap:40px;
+    }
 }
 
 

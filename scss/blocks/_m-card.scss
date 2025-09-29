@@ -1,5 +1,13 @@
 .m-card {
-    
+    @include tablet {
+        flex-shrink: 1;
+        width: 336px;
+    }
+
+    @include mobile {
+        width: 250px;
+        flex-grow: 1;
+    }
 }
 
 .m-card__link {
@@ -37,6 +45,10 @@
 
         opacity: 0;
         transition: opacity 0.3s ease-in;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &::before {
@@ -50,6 +62,10 @@
         opacity: 0;
         
         transition: opacity 0.3s ease-in;
+
+        @include tablet {
+            display: none;
+        }
     }
 }
 
@@ -57,6 +73,14 @@
     display: grid;
     gap: 16px;
     text-align: left;
+
+    @include mobile {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        flex-grow: 1;
+    }
 }
 
 .m-card__title {

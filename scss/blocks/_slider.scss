@@ -2,6 +2,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:24px;
+
+    @include tablet {
+        display: flex;
+        column-gap: 24px;
+        overflow-x: hidden;
+    }
+
+    @include mobile {
+        align-self: flex-start;
+    }
 }
 
 .slide {
@@ -11,10 +21,28 @@
     text-align: center;
     position: relative;
 
+    @include tablet {
+        flex-shrink: 0;
+    }
+
     img {
         width: 312px;
         height: 320px;
         margin-bottom: 24px;
+
+        @include laptop {
+            object-fit: cover;
+        }
+
+        @include tablet {
+            width: 300px;
+        }
+
+        @include mobile {
+            width: 250px;
+            height: 235px;
+            object-fit: cover;
+        }
     }
 
     b {
@@ -26,6 +54,11 @@
         line-height: 120%;
         text-align: center;
         color: #222;
+
+        @include mobile {
+            width: 200px;
+            margin: 0 auto;
+        }
     }
 
     span {
@@ -35,6 +68,11 @@
         text-transform: lowercase;
         text-align: center;
         color: #222;
+
+        @include mobile {
+            display: inline-block;
+            width: 200px;
+        }
     }
 }
 
@@ -60,6 +98,10 @@
     opacity: 0;
 
     transition: opacity 0.3s ease-in;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .slide__hidden-content {
@@ -72,6 +114,15 @@
     justify-content: center;
 
     background-image: url("./../img/icons/card-border.svg");
+
+    @include laptop {
+        width: 230px;
+        background-image: none;
+    }
+
+    @include tablet {
+        width: 250px;
+    }
     
     b {
         display: block;

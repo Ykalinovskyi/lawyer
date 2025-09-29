@@ -1,6 +1,11 @@
 .address {
     margin-right: 141px;
     width: 419px;
+
+    @include tablet {
+        margin-right: 0;
+        min-width: 335px;
+    }
 }
 .address__list {
     display: grid;
@@ -10,6 +15,10 @@
     display: flex;
     align-items: center;
     column-gap: 24px;
+
+    @include mobile {
+        column-gap: 16px;
+    }
 
     .address__icon {
         width: 55px;

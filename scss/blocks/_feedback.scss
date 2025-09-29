@@ -9,6 +9,15 @@
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include tablet {
+        padding: 60px 0;
+    }
+
+    @include mobile {
+        padding: 40px 0;
+        gap: 24px;
+    }
     
 }
 
@@ -21,11 +30,18 @@
         flex-direction: column;
         row-gap: 32px;
         align-items: flex-start;
+
+        @include tablet {
+            overflow: hidden;
+        }
     }
 }
 
 .feedback__title {
     text-align: left;
+    @include mobile {
+        font-weight: 700;
+    }
 }
 
 .feedback__controls {
@@ -39,16 +55,34 @@
         background-color: #4f8ff0;
         transform: rotate(-64deg);
     }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .feedback__cards {
     display: flex;
     align-items: center;
     column-gap: 24px;
+
+    @include tablet {
+        align-items: normal;
+    }
 }
 
 
 .feedback__btns {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: 24px;
+        align-self: center;
+        align-items: center;
+    }
 }
 
 .feedback_btn {
