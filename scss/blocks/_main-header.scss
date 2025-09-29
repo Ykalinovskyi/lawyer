@@ -27,4 +27,8 @@
 
 .main-header__btn {
     display: none;
+
+    @include tablet {
+        display: block;
+    }
 }

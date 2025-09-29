@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     column-gap: 24px;
+
+    @include tablet {
+        column-gap: 16px;
+    }
 }
 
 .contancts-info__link {
@@ -27,6 +31,12 @@
 
         svg {
             fill: #fff;
+        }
+    }
+
+    &--email {
+        @include mobile {
+            display: none;
         }
     }
 

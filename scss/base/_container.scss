@@ -3,8 +3,12 @@
 	padding: 0 var(--container-padding);
 	margin: 0 auto;
 
+	@include laptop {
+		width: 1200px;
+	}
+
 	@include tablet {
-		width: 768px;
+		width: 726px;
 	}
 
 	@include mobile {

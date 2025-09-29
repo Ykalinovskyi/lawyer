@@ -1,5 +1,7 @@
 .navigation {
-	
+	@include tablet {
+		display: none;
+	}
 }
 
 .navigation--footer {
