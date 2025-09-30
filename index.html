@@ -69,10 +69,30 @@
             </div>    
         </div>
     </header>
+
+    <section class="mobile-nav">
+		<h2 class="visually-hidden">Мобильная навигация</h2>
+
+		<button class="mobile-nav__btn" id="closeMobileNav">
+			<img src="./img/icons/menu_burger--close.svg" alt="Close navigation">
+		</button>
+
+		<div class="mobile-nav__body">
+			<ul class="mobile-nav-list">
+				<li><a href="#services">Услуги</a></li>
+				<li><a href="#about">О компании</a></li>
+				<li><a href="#lawyer">Наши юристы</a></li>
+				<li><a href="#feedback">Отзывы</a></li>
+				<li><a href="#materials">Новости</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+		</div>
+
+	</section>
     
     <main class="main-content">
         <h1 class="visually-hidden">Сайт юридических услуг компании Правозащитник</h1>
-        <section class="hero">
+        <section class="hero" id="hero">
             <h2 class="visually-hidden">Блок/Секция Hero</h2>
             <div class="container">
                 <div class="hero__row">
@@ -88,7 +108,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="services__row">
                     <div class="services__text-content">
@@ -164,7 +184,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__row">
                     <div class="about__text-content">
@@ -190,7 +210,7 @@
             </div>
         </section>
 
-        <section class="lawyer">
+        <section class="lawyer" id="lawyer">
             <div class="container">
                 <div class="lawyer__row">
                     <div class="lawyer__text-content">
@@ -278,7 +298,7 @@
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="container">
                 <div class="feedback__row">
                     <h2 class="feedback__title titles title--h2">Что о нас говорят клиенты</h2>
@@ -338,7 +358,7 @@
             </div>
         </section>
 
-        <section class="materials">
+        <section class="materials" id="materials">
             <div class="container">
                 <div class="materials__row">
                     <div class="materials__text-content">
@@ -409,7 +429,7 @@
 
     </main>
     
-    <footer class="main-footer">
+    <footer class="main-footer" id="contacts">
         <div class="container">
             <div class="main-footer__row">
                 <div class="main-footer__about">
@@ -508,7 +528,9 @@
         </div>
     </footer>
 
+
     <!-- SCRIPTS -->
+     <script src="./js/mobile-nav.js"></script>
     <script src="./js/main.js"></script>
 
 </body>

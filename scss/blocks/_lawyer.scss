@@ -15,8 +15,10 @@
 .lawyer__row {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     row-gap: 48px;
+
+    overflow: hidden;
 
     @include mobile {
         overflow: hidden;
@@ -24,6 +26,7 @@
 }
 
 .lawyer__text-content {
+    align-self: center;
     max-width: 920px;
     p {
         font-weight: 400;
